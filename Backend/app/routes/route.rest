@@ -1,0 +1,81 @@
+GET http://localhost:3000/docapp/15
+
+
+###
+
+POST http://localhost:3000/docapp
+Content-Type: application/json
+ 
+{
+    "id": "",
+    "date": "",
+    "time": [{"10:20","12:12","5:00"}],
+    "slotflag": "true"
+}
+
+###
+POST http://localhost:9000/docapp/appointment
+Content-Type: application/json
+ 
+{
+    
+    "date": "30-1-2022",
+    "time": "12:20",
+    "AppointmentInfo": "Fever",
+    "Prescription": "Drink juice", 
+    "DoctorId": "",
+    "PatientId": "",
+    "Status":"i dont know"
+}
+
+###
+POST http://localhost:9000/docapp/patient
+Content-Type: application/json
+
+{
+    
+    "Fname": "Pooja",   
+    "Lname": "Kudche",
+    "Address": "Brechtelstrasse 13b",
+    "Phone": "+549878998798",
+    "Postcode": "68309",
+    "City": "Heidelberg",
+    "insuranceProvider": "TK",
+    "firstName": "Pooja",
+    "lastName": "Kudche",
+    "address": "Brechtelstrasse 13b",
+    "birthDate": "17/3/1996",
+    "startDate": "10/12/2020",
+    "expiryDate": "10/12/2021",
+    "insuranceNumber": "T145678654",
+    "cardNumber": "A6734uj827",
+    "identificationNumberOfCarrier": "jklmno",
+    "Country": "Germany"
+    
+}
+
+###
+GET http://localhost:9000/docapp/getappointmentByDate/29-1-2022
+Content-Type: application/json
+
+###
+GET http://localhost:9000/docapp/getappointment/h123h2
+
+###
+GET http://localhost:9000/docapp/getPatDet
+Content-Type: application/json
+
+
+###
+DELETE  http://localhost:9000/docapp/deletePatient/61ef31096d3b4d54bed74210
+
+###
+PUT http://localhost:9000/docapp/updatePatient/61ef311c6d3b4d54bed74214
+Content-Type: application/json
+
+{
+"id":"h123h2",
+"Fname":"Raunak",
+"Lname":"Shetty"
+
+}

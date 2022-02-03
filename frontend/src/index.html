@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+
+
+<head>
+
+
+
+    <meta charset="utf-8" />
+
+
+
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+    <meta name="theme-color" content="#000000" />
+
+
+
+    <title>Patient Profile</title>
+
+</head>
+
+
+
+<body>
+
+
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+
+
+    <div id="root"></div>
+
+
+
+    <div id="test1">
+
+
+
+
+
+
+
+        <p class="form_pat"> </p>
+
+
+
+        <form id=" Patient-Profile">
+
+
+
+            <div>
+
+
+
+                <label for="FName"> First Name: </label>
+
+
+
+                <input type="text" placeholder="Enter First Name" id="fname" required>
+
+
+
+            </div>
+
+
+
+            <div>
+
+
+
+                <label for="LName"> Last Name: </label>
+
+
+
+                <input type="text" placeholder="Enter Last Name" id="lname" required>
+
+
+
+            </div>
+
+            <div>
+                <label for="start">Date of Birth:</label>
+
+
+
+                <input type="date" id="start" name="trip-start" value="2020-02-01" min="2015-01-01" max="2040-12-31">
+
+
+
+            </div>
+
+
+
+            <div>
+
+                <form>
+
+
+
+                    <span> 
+          
+           
+          
+                <label for="gender"> Gender: </label> 
+          
+           
+          
+                <select name="gender"  id="gender"> 
+          
+           
+          
+                  <option value="Male" Selected> Male</option> 
+          
+           
+          
+                  <option value="Female"> Female</option> 
+          
+           
+          
+                  <option value="Others"> Others </option> 
+          
+           
+          
+                </select>   
+          
+           
+          
+              </span>
+
+
+
+                </form>
+
+
+            </div>
+
+
+
+            <div>
+
+
+
+                <label for="add"> Address: </label>
+
+
+
+                <input type="text" placeholder="Address" id="add" required>
+
+
+
+            </div>
+
+
+
+            <div>
+
+                <label for="pcode"> Postal Code: </label>
+
+
+
+                <input type="text" placeholder="Postal Code" id="pcode" required>
+
+
+
+            </div>
+
+            <div>
+
+                <label for="mobile"> Contact Number: </label>
+
+
+
+                <input type="text" placeholder="Contact Number" id="mobile" required>
+
+
+
+            </div>
+
+            <div>
+
+                <label for="email"> Email Address: </label>
+
+
+
+                <input type="text" placeholder="Email Addresss" id="email" required>
+
+
+
+            </div>
+
+            <h4>Insurance Details</h4>
+
+            <div>
+
+                <label for="insuranceno"> Insurance Number: </label>
+
+
+
+                <input type="text" placeholder="Insurance Number" id="insuranceno" required>
+
+
+
+            </div>
+
+
+
+            <div>
+
+                <form>
+
+
+
+                    <span> 
+      
+               
+      
+                    <label for="insurance"> Insurance Provider: </label> 
+      
+               
+      
+                    <select name="insurance"  id="insurance"> 
+      
+               
+      
+                      <option value="TK"> TK</option> 
+      
+               
+      
+                      <option value="AOK" > AOK</option> 
+      
+               
+      
+                      <option value="Others"> Others </option> 
+      
+               
+      
+                    </select>   
+      
+               
+      
+                  </span>
+
+
+
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+            <div>
+
+
+
+                <label for="start">Start Date:</label>
+
+
+
+                <input type="date" id="start" name="trip-start" value="2020-02-01" min="2015-01-01" max="2040-12-31">
+
+
+
+            </div>
+
+            <div>
+
+
+
+                <label for="start">Expiry Date:</label>
+
+
+
+                <input type="date" id="start" name="trip-start" value="2020-02-01" min="2015-01-01" max="2040-12-31">
+
+
+
+            </div>
+
+
+
+
+
+            <div>
+
+                <label for="INumber"> Identification Number: </label>
+
+
+
+                <input type="text" placeholder="Identification Number" id="INumber" required>
+
+
+
+            </div>
+
+            <br>
+
+            <input type="Submit" value="Save Registration Details" />
+
+            <input type="Submit" value="Edit Registration Details" />
+
+            <br>
+
+            <br>
+
+            <input type="Submit" value="Cancel" />
+
+        </form>
+
+</body>
+
+
+
+</html>

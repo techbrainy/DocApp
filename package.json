@@ -1,0 +1,21 @@
+{
+    "name": "doc_app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.2",
+        "mongoose": "^6.1.7",
+        "node-cache": "^5.1.2"
+    },
+    "devDependencies": {
+        "dotenv": "^14.2.0",
+        "nodemon": "^2.0.15"
+    }
+}
