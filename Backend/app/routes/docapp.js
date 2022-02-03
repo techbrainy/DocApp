@@ -18,15 +18,6 @@ router.get('/getappointment/:id', cache(200), async(req, res) => {
 })
 
 
-router.get('/getappointmentpat/:id', cache(200), async(req, res) => {
-
-    const abcd = await patient.find({ PatientId: req.params.id })
-    console.log(abcd)
-
-
-    res.json(abcd)
-})
-
 
 router.get('/getappointmentByDate/:date', cache(200), async(req, res) => {
     const dateString = req.params.date
