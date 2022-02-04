@@ -55,14 +55,14 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:9000/docapp/getappointmentByDate/29-1-2022
+GET http://localhost:9000/docapp/getappointmentByDate/61f89a6e34322cd54f747b86/29-1-2022
 Content-Type: application/json
 
 ###
 GET http://localhost:9000/docapp/getappointment/h123h2
 
 ###
-GET http://localhost:9000/docapp/getPatDet
+GET http://localhost:9000/docapp/getPatDet/61ef32dead3579fdfc541829
 Content-Type: application/json
 
 
@@ -87,3 +87,13 @@ GET http://localhost:9000/docapp/getdoctorBycity/Mannheim
 
 ###
 GET http://localhost:9000/docapp/getSpecialization/Cardiologist
+
+
+###
+POST  http://localhost:9000/docapp/api/login
+Content-Type: application/json
+
+{
+"username":"alex",
+"password":"password"
+}
