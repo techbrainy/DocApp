@@ -11,6 +11,8 @@ import CreateAppointment from './components/CreateAppointment';
 import GetAppointmentByPatId from './components/GetAppointmentsByPatId';
 import UpdatePatient from './components/UpdatePatient';
 import DeletePatient from './components/DeletePatient';
+import GetDocByCity from './components/GetDocByCity';
+import GetDocBySpec from './components/GetDocBySpec';
 
 const App = () =>  {
   return (
@@ -48,6 +50,14 @@ const App = () =>  {
        <Route
          path="docapp/deletePatient/:id"
          element={<DeletePatient/>}
+       />
+       <Route
+         path="docapp/getdoctorBycity/:city"
+         element={<GetDocByCity/>}
+       />
+       <Route
+         path="docapp/getSpecialization/:spec"
+         element={<GetDocBySpec/>}
        />
       
         </Routes>

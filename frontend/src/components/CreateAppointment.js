@@ -53,12 +53,7 @@ const call = ()=>{
         </div>
       );
 
-
-
-
-
-
-    
+  
 }
 
 export default CreateAppointment;

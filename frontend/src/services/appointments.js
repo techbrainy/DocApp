@@ -17,6 +17,12 @@ class appDataService {
     getAppointmentbyId(id) {
         return http.get('docapp/getappointment/' + id)
     }
+    getDocByCity(city) {
+        return http.get('docapp/getdoctorBycity/' + city)
+    }
+    getDocBySpec(spec) {
+        return http.get('docapp/getSpecialization/' + spec)
+    }
 }
 
 export default new appDataService();

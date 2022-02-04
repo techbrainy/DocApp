@@ -2,11 +2,13 @@ const express = require('express')
 const req = require('express/lib/request')
 const mongoose = require('mongoose')
 const router = express.Router()
-
+const Doctor = require('../model/doctorSchema')
 const appointment = require('../model/appointment')
 const patient = require('../model/patient')
 
 const cache = require('D:/React/doc_app/routeCache')
+
+
 
 router.get('/getappointment/:id', cache(200), async(req, res) => {
 
@@ -17,15 +19,32 @@ router.get('/getappointment/:id', cache(200), async(req, res) => {
     res.json(abcd)
 })
 
-router.get('/getappointmentpat/:id', cache(200), async(req, res) => {
+router.get('/getdoctorBycity/:city', cache(200), async(req, res) => {
 
-    const abcd = await appointment.find({ PatientId: req.params.id })
-    console.log(abcd)
+    const doctors = await Doctor.find({ City: req.params.city })
+    console.log("s" + doctors)
 
 
-    res.json(abcd)
+    res.json(doctors)
 })
 
+router.get('/getdoctorBycity/:city', cache(200), async(req, res) => {
+
+    const doctors = await Doctor.find({ City: req.params.city })
+    console.log("s" + doctors)
+
+
+    res.json(doctors)
+})
+
+router.get('/getSpecialization/:Specialization', cache(200), async(req, res) => {
+
+    const doctors = await Doctor.find({ Specialization: req.params.Specialization })
+    console.log("s" + doctors)
+
+
+    res.json(doctors)
+})
 
 
 router.get('/getappointmentByDate/:date', cache(200), async(req, res) => {
